@@ -1,0 +1,14 @@
+{
+  "name": "ohmyfood_1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ."
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "sass": "^1.49.9"
+  }
+}
