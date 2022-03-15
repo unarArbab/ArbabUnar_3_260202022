@@ -1,18 +1,19 @@
 
-body {
-    margin: 0;
-    padding: 0;
-    font-family: "Roboto", sans-serif;
-    font-size: 16px;
-  }
-  
+@import "./sass/base.scss";
+@import "./sass/layout/header.scss";
+@import "./sass/layout/locale.scss";
+@import "./sass/layout/option.scss";
+@import "./sass/layout/option.scss";
+@import "../utils/box-shadow.scss"
+
   /*STYLE*/
+
   h1 {
     font-family: "Shrikhand", sans-serif;
     text-align: center;
     margin: 20px 0 auto;
   }
-  
+
   h2 {
     font-family: "Shrikhand", cursive;
     text-align: center;
@@ -25,22 +26,11 @@ body {
   h4, p {
     margin: 0;
   }
-  
+
   /*  EN-TÊTE  */
-  header {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.1);
-  }
   
- 
-  header .icon {
-    position: absolute;
-    top: 30px;
-    left: 30px;
-    color: #000;
-  }
+   
+
   
   /*  FOOTER  */
   footer {
@@ -76,96 +66,13 @@ body {
     background-color: whitesmoke;
   }
   
+  
  
   /*   ACCUEIL - Partie concept  */
-  .objet {
-    height: 300px;  
-    padding-bottom: 20px;
-    background-color: whitesmoke;
-    text-align: center;
-  }
   
-  .location {
-    padding: 30px 10px 30px;
-    background-color: #f0f0f0;
-   
-  }
-  
-  .location .icon {
-    
-    padding: 5px 5px 5px 5px;
-  }
-  
-  .objetParticulier {
-    margin: 2px 2px 2px;
-    padding: 30px 0px 30px;
-  }
-  
-  .objetDetails {
-    padding: 0 30px;
-  }
-  
-  .scope {
-    font-weight: lighter;
-  }
   
   /* ACCUEIL - Partie process  */
-  .manipulation {
-    padding: 10px;
-    background-color: #fff;
-  }
   
-  .mode-de-emploi {
-    display: flex;
-    justify-content: space-around;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    flex-direction: row;
-    -webkit-box-orient: vertical;
-    list-style-type: none;
-    padding: 0;
-  }
- 
-  .mode-de-emploi .list {
-    position: relative;
-    padding: 1em 0.7em;
-    padding: 20px 13px 0 13px;
-    margin: 20px 10px;
-    height: 50px;
-    text-align: left;
-    background-color: whitesmoke;
-    border-radius: 15px;
-    box-shadow: 0px 5px 10px 0px gainsboro;
-    -webkit-box-shadow: 0px 5px 10px 0px gainsboro;
-  }
-  
-  .mode-de-emploi .list:hover {
-    background-color: rgba(147, 86, 220, 0.1);
-    cursor: default;
-  }
-  
-  .mode-deemploi .list:hover .icon {
-    color: #9356DC;
-  }
-  
-  .mode-de-emploi .icon {
-    margin: 0 25px;
-    font-size: 20px;
-    color: #646464;
-  }
-  
-  .step {
-    position: absolute;
-    left: -10px;
-    padding-top: 2px;
-    width: 23px;
-    height: 20px;
-    border-radius: 50px;
-    text-align: center;
-    font-size: 0.9em;
-    color: #fff;
-    background-color: #9356DC;
-  }
   
   /*   ACCUEIL - Partie restaurants  */
   
@@ -318,25 +225,7 @@ body {
   }
 }
   /*  BOUTONS - Map et Commander  */
-  .btn {
-    color: #ffffff;
-    background: linear-gradient(to top left, #9356DC, #FF79DA);
-    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.3);
-    text-align: center;
-    padding: 10px;
-    border: none;
-    border-radius: 50px;
-    cursor: pointer;
-    width: 200px;
-    height: 50px;
-    margin: 20px auto;
-    transition: opacity 1s;
-  }
   
-  .btn:hover {
-    opacity: 0.5;
-    box-shadow: 0 5px 10px 0 rgba(0, 0, 0, 0.4);
-  }
   
   /*  BOUTONS - checkbox like  */
   .checkbox-like {

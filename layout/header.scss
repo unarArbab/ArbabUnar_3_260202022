@@ -1,0 +1,15 @@
+
+@import @import "../utils/box-shadow.scss";
+
+header {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    @include header-shadow;
+  &_.icon {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    color: #000;
+  }
+}
