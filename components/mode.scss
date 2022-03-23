@@ -1,0 +1,54 @@
+.mode {
+    padding: 10px;
+    background-color: #fff;
+  }
+  .mode-de-emploi {
+    display: flex;
+    justify-content: space-around;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    flex-direction: row;
+    -webkit-box-orient: vertical;
+    list-style-type: none;
+    padding: 0;
+  }
+  .mode-de-emploi .list {
+    position: relative;
+    padding: 1em 0.7em;
+    padding: 20px 13px 0 13px;
+    margin: 20px 10px;
+    height: 50px;
+    text-align: left;
+    background-color: whitesmoke ;
+    border-radius: 15px;
+    box-shadow: 0px 5px 10px 0px gainsboro;      
+    -webkit-box-shadow: 0px 5px 10px 0px gainsboro;    
+  }
+
+  .mode-de-emploi .list:hover {
+    background-color: rgba(147, 86, 220, 0.1);
+    cursor: default;   
+  }
+  
+  
+  
+  .mode-de-emploi .icon {
+    margin: 0 25px;
+    font-size: 20px;
+    color: #646464;
+  }
+  .mode-deemploi .list:hover .icon {
+    color: #9356DC;
+  }
+  .step {
+    position: absolute;
+    left: -10px;
+    padding-top: 2px;
+    width: 23px;
+    height: 20px;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 0.9em;
+    color: #fff;
+    background-color: #9356DC;
+  }

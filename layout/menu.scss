@@ -1,0 +1,91 @@
+@use "../utils/box-shadow";
+@use "../utils/variables";
+.restaurants {
+    padding: 15px 15px 15 15px;
+    /*background-color:#f5f5f5;*/
+    background-color:$bgsmoke ;
+    & .photo {
+    max-height:  200px;
+    width: 100%;
+    border-radius: 10px 10px 0 0;
+    object-fit: cover;
+  }   
+} 
+  
+  .menu {
+    position: relative;
+    margin-bottom: 15px;
+    border-radius: 20px;
+    /*box-shadow: 0px 5px 10px 0px gainsboro;*/
+    @include header-shadow.box-shadow;
+    background-color:#fff;
+   
+    & a {
+    color: #000;
+    text-decoration: none;
+  }
+}
+  
+  .menu-titre {
+    display: flex;
+    flex-direction: column;
+    margin: 10px 15px 0;
+    padding-bottom: 20px;
+    background-color: #fff;
+    border-radius: 20px 20px 0 0;
+  }
+
+  .promo {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width:100px;
+    padding: 15px;
+    color: #0c6b50;
+    background: #99E2D0;
+    border-radius: 3px;
+    text-align: center;
+    font-size: 16px;
+  }
+ .checkbox-like {
+    position: absolute;
+    right: 20px;
+    bottom: 35px;
+    height: 25px;
+    font-size: 25px;
+    cursor: pointer;
+  }
+  
+  .checkbox-like.checkbox-like--position {
+    position: initial;
+    margin-top: 20px;
+  }
+  
+  .checkbox-like input[type=checkbox]:checked ~ .unchecked {
+    display: none;
+  }
+  
+  .checkbox-like input[type=checkbox]:checked ~ .checked {
+    display: inline-block;
+    color: rgba(255, 255, 255, 0);
+  }
+  
+  .checkbox-like input[type=checkbox], .checkbox-like .checked {
+    display: none;
+    animation: like 2s;
+    animation-fill-mode: forwards;
+  }
+  
+  @keyframes like {
+    0% {
+      opacity: 0;
+    }
+    50% {
+      background: linear-gradient(to bottom, #9356DC, #FF79DA);
+      -webkit-background-clip: text;
+    }
+    100% {
+      background: linear-gradient(to bottom, #9356DC, #FF79DA);
+      -webkit-background-clip: text;
+    }
+  }

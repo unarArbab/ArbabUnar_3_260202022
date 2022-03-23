@@ -1,15 +1,14 @@
-
-@import @import "../utils/box-shadow.scss";
-
+@use "../utils/box-shadow";
 header {
     position: relative;
     display: flex;
     justify-content: center;
-    @include header-shadow;
-  &_.icon {
+    @include box-shadow.header-shadow;
+     
+   & .icon {
     position: absolute;
     top: 30px;
     left: 30px;
     color: #000;
   }
-}
+}/*box-shadow: 0 3px 4px 0 rgba(0, 0, 0, 0.1); ;*/
